@@ -1,8 +1,9 @@
 FROM python:3.8-slim-buster
 
 # Installing python3.8 and pip3
-RUN apt-get update && apt-get -y install curl
-RUN apt-get install -y apt-get install -y libpq-dev && apt-get -y install gcc
+RUN apt-get update  -y
+RUN apt-get upgrade -y
+RUN apt-get install -y libpq-dev && apt-get -y install gcc
 
 # We copy just the requirements.txt first to leverage Docker cache
 COPY web_server/requirements.txt /app/requirements.txt
