@@ -116,5 +116,5 @@ resource "random_id" "id" {
 
 locals {
   gcp_service_account_name = "cloud-arch-hw2"
-  cloud_sql_instance_name  = "postgres-db"
+  cloud_sql_instance_name  = "postgres-app-database"
 }
