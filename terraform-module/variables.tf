@@ -93,7 +93,7 @@ variable "cooldown_period" {
 variable "database_version" {
   type        = string
   description = "Database version for app"
-  default     = "POSTGRES_11"
+  default     = "MYSQL_5_7"
 }
 
 variable "database_tier" {
