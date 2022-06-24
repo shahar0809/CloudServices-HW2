@@ -1,1 +1,1 @@
-terraform-module/.terraform/ linguist-vendored=true
+terraform-module/.terraform/** linguist-vendored=true
